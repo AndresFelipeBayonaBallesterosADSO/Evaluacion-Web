@@ -20,7 +20,6 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .nav__list{
@@ -60,6 +59,10 @@ body{
   background-image: url(Fondo.png);
 }
 
+.Rectangle{
+  padding: 100px 0 30px 0;
+}
+
 .img-1{
   width: 600px;
   padding-bottom: 20px;
@@ -74,7 +77,236 @@ body{
   flex-direction: column;
 }
 
-.Contenedor__imagenes--imagen1{
-  height: 100px;
-  width: 100px;
+.Contenedor__imagenes--imagen1 {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center; 
+  height: 300px; 
+  width: 100%;
+}
+
+.imagen {
+  padding: 50px;
+  position: absolute;
+}
+
+.card__grupo--2{
+  padding: 60px 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr; 
+  grid-template-rows: auto auto; 
+  gap: 50px;
+}
+
+/* Card Grupo 3 */
+
+.contenedor-card3{
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.imagen_card3{
+  padding: 0 0 40px 0;
+}
+
+.texto-inferior{
+  padding: 30px 0 0 0; 
+}
+
+.rectangle__card3{
+  padding: 60px 0 40px 0;
+}
+
+.imagen_pequeña{
+  width: 350px;
+  height: 330px;
+}
+
+.contenedor__hamburg{
+  display: flex;
+  gap: 6rem;
+  padding: 90px 0px;
+  justify-content: center;
+}
+
+.contenedor__card--hamburg{
+  display: flex;
+  width: 300px;
+  padding: 22px;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.boton{
+  background: red;
+  padding: 10px 45px; 
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 20px; 
+  font-weight: 500;
+}
+
+/* Sección Grupo 4 */
+
+.contenedor_circles {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: 30px 0px 30px 0px #d9d9d9;
+  margin-top: 400px;
+}
+
+.textos-circulos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle, .circle_amarillo {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.circle_amarillo{
+  color: #ffea00;
+}
+
+.circle{
+  color: #dcdcdc;
+}
+
+/* Sección Grupo 5 */
+.contenedor__email{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(Image.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  height: 100vh;
+  margin: 0; 
+}
+.contenedor__email h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 20px 0;
+}
+
+.contenedor__email img{
+  display: flex;
+  justify-content: center;
+  padding: 0 0 80px 0;
+}
+
+.boton-2{
+  background: red;
+  padding: 10px 45px; 
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 20px; 
+  font-weight: 900;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px; 
+}
+
+.columna {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
+
+input[type="text"], input[type="email"], .boton-2 {
+  width: 100%;
+  padding: 20px 40px;
+  margin: 0; 
+}
+
+.boton-2 {
+  background: red;
+  color: #f2f2f2;
+  border: none;
+  cursor: pointer;
+}
+
+/* Sección Grupo 6  */
+.pie__pagina--fondo{
+  background-image: url(Place\ Your\ Design\ Here\ \(Double\ Click\ to\ Edit\).png);
+  color: #fff;
+}
+
+.pie__pagina {
+  height: 50vh;
+  display: grid;
+  grid-template: 
+    "title about services other" auto
+    "title about services iconos" 150px / 400px auto auto auto;
+  gap: 20px 20px;
+  padding: 50px;
+}
+.pie__pagina--title{
+  grid-area: title;
+  margin-right: 100px;
+}
+
+
+.pie__pagina--about{
+  grid-area: about;
+}
+
+
+
+.pie__pagina--other{
+  grid-area: other;
+}
+
+.pie__titulos{
+  padding-bottom: 30px;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.pie__title--texto{
+  font-size: 100;
+  padding-bottom: 30px;
+  width: 400px;
+}
+
+.pie__pagina--iconos {
+  display: flex;
+  gap: 5px;
+  align-items: flex-end; 
+  grid-area: iconos; 
+}
+
+.pie__lista {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start; 
+}
+
+.pie__iconos {
+  background: #fff;
+  color: black;
+  border-radius: 1000px;
+  padding: 10px;
+  font-size: 24px;
+}
+
+
+.pie__lista{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
 }
